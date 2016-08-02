@@ -11,6 +11,9 @@ import LocalAuthentication
 public protocol PasswordInputCompleteProtocol: class {
     func passwordInputComplete(passwordContainerView: PasswordContainerView, input: String)
     func touchAuthenticationComplete(passwordContainerView: PasswordContainerView, success: Bool, error: NSError?)
+    
+    func forgotMyPasscode(passwordContainerView: PasswordContainerView)
+
 }
 
 public class PasswordContainerView: UIView {
@@ -152,6 +155,10 @@ public class PasswordContainerView: UIView {
             return
         }
         inputString = String(inputString.characters.dropLast())
+    }
+   
+    @IBAction func forgotPasscodeDidTap(sender: UIButton) {
+        self.delegate!.forgotMyPasscode(self)
     }
     
     @IBAction func touchAuthenticationAction(sender: UIButton) {

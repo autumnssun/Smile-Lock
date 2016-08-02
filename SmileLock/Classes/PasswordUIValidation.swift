@@ -39,4 +39,6 @@ public class PasswordUIValidation<T>: PasswordInputCompleteProtocol {
     }
     
     public func touchAuthenticationComplete(passwordContainerView: PasswordContainerView, success: Bool, error: NSError?) {}
+    
+    public func forgotMyPasscode(passwordContainerView: PasswordContainerView){}
 }
