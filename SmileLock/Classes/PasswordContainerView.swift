@@ -24,8 +24,9 @@ public class PasswordContainerView: UIView {
     @IBOutlet weak var deleteButton: UIButton!
     @IBOutlet weak var touchAuthenticationButton: UIButton!
     
-    @IBOutlet weak var forgotPasscodeBtn: UIButton!
-
+    @IBOutlet public var forgotPasscodeBtn: UIButton!
+    @IBOutlet public var Message:UILabel!
+    
     //MARK: Property
     public weak var delegate: PasswordInputCompleteProtocol?
     private var touchIDContext = LAContext()
