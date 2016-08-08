@@ -26,7 +26,7 @@ public class PasswordContainerView: UIView {
     
     @IBOutlet public var forgotPasscodeBtn: UIButton!
     @IBOutlet public var Message:UILabel!
-    @IBOutlet var MessageTop: UILabel!
+    @IBOutlet public var MessageTop: UILabel!
     
     //MARK: Property
     public weak var delegate: PasswordInputCompleteProtocol?
